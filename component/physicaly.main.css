@@ -1,0 +1,85 @@
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#header #AppName{
+    font-weight: bold;
+    position: absolute;
+    top:0;
+    left:0;
+    font-size:16pt;
+    
+}
+
+#header button {
+    height: 45px;
+    width: 45px;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.4s;
+    font-size:14pt;
+}
+
+#header button:active {
+    transition-duration: 0.4s;
+    background: #eee;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+}
+
+#content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+@media screen and (max-width:1000px) {
+    #content div.hide {
+        display: none;
+    }
+
+    #content div.show {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        overflow: auto;
+        background: #fff;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    #matterjsDiv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        overflow: auto;
+        background: #fff;
+    }
+
+    #blocklyDiv {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+    }
+}

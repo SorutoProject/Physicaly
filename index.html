@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" href="component/physicaly.main.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!--matterjs-->
+    <script src="component/matterjs/matter.js"></script>
+    <!--blockly-->
+    <script src="component/blockly/blockly_compressed.js"></script>
+    <script src="component/blockly/blocks_compressed.js"></script>
+    <script src="component/blockly/msg/js/ja.js"></script>
+    <script src="component/blockly/javascript_compressed.js"></script>
+    <!--tippy.js-->
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <!--physicaly-->
+    <script src="component/physicaly.blocks.js"></script>
+    <script src="component/physicaly.main.js"></script>
+    <title>Physicaly</title>
+</head>
+
+<body>
+    <div id="header">
+        <span id="AppName">Physicaly</span>
+        <button id="playButton"><i class="fas fa-play"></i></button>
+        <button id="switchMode"><i class="fas fa-exchange-alt"></i></button>
+        <button id="openFile"><i class="fas fa-folder-open"></i></button>
+        <input type="file" id="openFileInput" accept=".psl" hidden>
+        <button id="saveFile"><i class="fas fa-save"></i></button>
+    </div>
+    <div id="content">
+        <div id="blocklyDiv" class="show"></div>
+        <div id="matterjsDiv" class="hide">
+            <main id="main"></main>
+        </div>
+    </div>
+</body>
+
+</html>
