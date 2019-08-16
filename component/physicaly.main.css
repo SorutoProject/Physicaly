@@ -59,6 +59,9 @@
         overflow: auto;
         background: #fff;
     }
+    #AppName{
+        display: none;
+    }
 }
 
 @media screen and (min-width:1000px) {
